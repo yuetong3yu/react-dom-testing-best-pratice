@@ -6,7 +6,7 @@ export const Example = () => {
   return (
     <>
       <button onClick={() => setShowFooter(!showFooter)}>to show</button>
-      {showFooter && <footer data-testid="footer">Hi im footer</footer>}
+      {showFooter ? <footer data-testid="footer">Hi im footer</footer> : null}
     </>
   )
 }
