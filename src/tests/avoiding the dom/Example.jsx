@@ -5,7 +5,9 @@ export const Example = () => {
 
   return (
     <>
-      <button onClick={() => setShowFooter(!showFooter)}>to show</button>
+      <button id="primary-btn" onClick={() => setShowFooter(!showFooter)}>
+        to show
+      </button>
       {showFooter ? <footer data-testid="footer">Hi im footer</footer> : null}
     </>
   )
